@@ -35,7 +35,7 @@ toast.toast({
 
 ### **#Preview**
 <!-- center -->
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 20px">
+<div align="center">
 <img src="preview-dark.png" style="max-height: 100%; height: 30rem; margin-bottom: 20px">
 <img src="preview.png" style="max-height: 100%; height: 28rem;margin-bottom: 20px">
 </div>
