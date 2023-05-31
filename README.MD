@@ -35,9 +35,15 @@ toast.toast({
 
 ### **#Preview**
 <!-- center -->
-<div align="center">
-<img src="preview-dark.png" style="max-height: 100%; height: 30rem; margin-bottom: 20px">
-<img src="preview.png" style="max-height: 100%; height: 28rem;margin-bottom: 20px">
+<div style="text-align: center;">
+<div>
+    <img src="preview-dark.png" style="max-height: 100%; height: 30rem; margin-bottom: 20px">
+    </div>
+    
+<div>
+    <img src="preview.png" style="max-height: 100%; height: 28rem;margin-bottom: 20px">
+    </div>
+
 </div>
 <h3><strong>Contribution : </strong></h3>
 <a href="https://github.com/ilsyaa"><img style="min-height: 20px; height: 50px; border-radius: 5px" src="https://avatars.githubusercontent.com/u/76580335?v=4" /></a>
