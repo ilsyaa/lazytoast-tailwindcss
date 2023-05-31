@@ -7,6 +7,9 @@ npm install
 npx tailwindcss -i ./src/tailwind.css -o ./dist/app.css --watch
 ```
 
+### **#Demo**
+<a href="https://ilsyaa.github.io/">https://ilsyaa.github.io/</a>
+
 ### **#Config**
 ```js
 // config toast
