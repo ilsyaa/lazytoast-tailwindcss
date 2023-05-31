@@ -35,18 +35,5 @@ toast.toast({
 // style: string (success, error, warning, info, bug)
 // css: string (custom css) if css not change use !important ex !bg-red-500 !text-white
 ```
-
-### **#Preview**
-<!-- center -->
-<div style="text-align: center;">
-<div style="text-align: center;">
-    <img src="preview-dark.png" style="max-height: 100%; height: 30rem; margin-bottom: 20px">
-</div>
-    
-<div style="text-align: center;">
-    <img src="preview.png" style="max-height: 100%; height: 30rem;margin-bottom: 20px">
-</div>
-
-</div>
 <h3><strong>Contribution : </strong></h3>
 <a href="https://github.com/ilsyaa"><img style="min-height: 20px; height: 50px; border-radius: 5px" src="https://avatars.githubusercontent.com/u/76580335?v=4" /></a>
