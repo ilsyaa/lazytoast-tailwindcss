@@ -14,7 +14,7 @@ npx tailwindcss -i ./src/tailwind.css -o ./dist/app.css --watch
 ```js
 // config toast
 const toast = new LazyToast({
-    duration:31000,
+    duration:3000,
     position: 'top-right',
 });
 
