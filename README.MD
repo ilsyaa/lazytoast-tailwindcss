@@ -36,13 +36,13 @@ toast.toast({
 ### **#Preview**
 <!-- center -->
 <div style="text-align: center;">
-<div>
+<div style="text-align: center;">
     <img src="preview-dark.png" style="max-height: 100%; height: 30rem; margin-bottom: 20px">
-    </div>
+</div>
     
-<div>
-    <img src="preview.png" style="max-height: 100%; height: 28rem;margin-bottom: 20px">
-    </div>
+<div style="text-align: center;">
+    <img src="preview.png" style="max-height: 100%; height: 30rem;margin-bottom: 20px">
+</div>
 
 </div>
 <h3><strong>Contribution : </strong></h3>
