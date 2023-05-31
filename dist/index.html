@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="app.css">
+    <title>LazyToast Tailwind</title>
+</head>
+<body class="bg-white dark:bg-gray-900">
+
+    <!-- form data  -->
+    <form class="p-3" id="form">
+        <div class="mb-3">
+            <input type="text" class="border dark:border-gray-700 dark:text-gray-100 bg-transparent w-full rounded-xl p-3 focus:outline-none" autocomplete="off" name="title" placeholder="title">
+        </div>
+        <div>
+            <textarea class="border dark:border-gray-700 dark:text-gray-100 bg-transparent w-full rounded-xl p-3 focus:outline-none" name="msg" autocomplete="off" rows="10"></textarea>
+        </div>
+        <div>
+            <select name="style" class="border dark:border-gray-700 dark:text-gray-100 bg-gray-900 w-full rounded-xl p-3 focus:outline-none">
+                <option value="success">success</option>
+                <option value="warning">warning</option>
+                <option value="error">error</option>
+                <option value="info">info</option>
+                <option value="bug">bug</option>
+            </select>
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-x-3 gap-y-3 mt-3 ">
+            <div>
+                <button class="bg-green-500 w-full px-2 py-3 rounded-xl text-white" type="submit">Show Toast</button>
+            </div>
+            <div>
+                <button data-switch="theme" type="button" class="bg-gray-800 w-full px-2 py-3 rounded-xl text-white">Dark & Light</button>
+            </div>
+        </div>
+    </form>
+    <!-- form data  -->
+
+    <!-- load lazytoast -->
+    <script src="lazytoast.js"></script>
+    <script>
+
+        // LazyToast start
+
+        // config toast
+        const toast = new LazyToast({
+            duration:31000,
+            position: 'top-right',
+        });
+
+        document.getElementById('form').addEventListener('submit', function(e){
+            e.preventDefault();
+            var data = new FormData(this);
+            // show toast
+            toast.toast({
+                title: data.get('title') || 'Hello World',
+                msg: data.get('msg') || 'This is a toast message',
+                style: data.get('style') || 'success',
+            });
+        })
+
+        // LazyToast end
+
+
+
+
+        // Dark & Light start
+        const switchTheme = document.querySelector('[data-switch="theme"]');
+        switchTheme.addEventListener('click', function(){
+            const html = document.querySelector('html');
+            if(html.getAttribute('data-theme') == 'dark'){
+                html.setAttribute('data-theme', 'light');
+            }else{
+                html.setAttribute('data-theme', 'dark');
+            }
+        })
+        // Dark & Light end
+    </script>
+</body>
+</html>
